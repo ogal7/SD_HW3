@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<h1> Find a Job! </h1>
+</head>
+
+
+<body>
+  <br>
+  <h2> The following occupations are available </h2>
+  <table>
+    {% for keyval in dict %}
+        {% for keyval, occu in keyval.items() %}
+    <tr> {{ keyval }} </tr> 
+
+    </table>
+
+  <br><br>
+
+  <h4> We suggest you choose this occupation: </h4>
+
+
+</body>
+
+
+
+
+</html>
