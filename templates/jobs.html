@@ -2,6 +2,9 @@
 <html>
 
 <head>
+table, th, td {
+    border: 1px solid black;
+}
 <h1> Find a Job! </h1>
 </head>
 
@@ -10,11 +13,14 @@
   <br>
   <h2> The following occupations are available </h2>
   <table>
-    {% for keyval in dict %}
-        {% for keyval, occu in keyval.items() %}
-    <tr> {{ keyval }} </tr> 
-
-    </table>
+    {% for dict_item in dict %}
+        {% for key, val  in dict_item.items() %}
+    <tr> 
+      <td>{{ key }}   </td>
+      <td>{{val}} % </td>
+    </tr> 
+    {%endfor%}
+ </table>
 
   <br><br>
 

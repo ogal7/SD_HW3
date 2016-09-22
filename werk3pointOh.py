@@ -1,3 +1,8 @@
+#!/usr/bin/python
+#OG
+#Softdev homewerk numero thres
+
+
 from flask import Flask, render_template
 import csv
 import random
@@ -5,6 +10,7 @@ import random
 
 app = Flask(__name__)
 @app.route('/occupations')
+
 d = {}
 randoJob = ""
 
@@ -17,7 +23,7 @@ with open('occupations.csv') as csvfile:
         if (row[0] != "Job Class" and row[0] != "Total"):
             d[row[0]] = row[1]
 
-
+##For probabilities
 li = []
 
 for x in d.keys():
