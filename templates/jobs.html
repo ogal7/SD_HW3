@@ -13,13 +13,12 @@ table, th, td {
   <br>
   <h2> The following occupations are available </h2>
   <table>
-    {% for dict_item in dict %}
-        {% for key, val  in dict_item.items() %}
-    <tr> 
-      <td>{{ key }}   </td>
-      <td>{{val}} % </td>
-    </tr> 
-    {%endfor%}
+        {% for key  in dict %}
+          <tr> 
+            <td>{{key}}</td>
+            <td>{{dict[key]}}  </td>
+          </tr> 
+        {% endfor %}
  </table>
 
   <br><br>
