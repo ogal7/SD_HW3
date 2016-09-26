@@ -5,11 +5,10 @@
 <h1> Find a Job! </h1>
 </head>
 
-
-<body>
+<body bgcolor="#CBBAED">  <font size="16">
   <br>
   <h2> The following occupations are available </h2>
-  <table>
+  <table bgcolor = "#70E4EF" border = 4px>
         {% for key in dict %}
           <tr> 
             <td>{{key}}</td>
@@ -17,12 +16,12 @@
           </tr>
 	  {% endfor %}
  </table>
-  <br><br>
+ <br><br>
 
-  <h4> We suggest you choose this occupation: 
+ <h4> We suggest you choose this occupation: 
     {{job}}
-  </h4>
-  
-</body>
+ </h4>
+
+</font> </body>
 
 </html>
