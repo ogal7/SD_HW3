@@ -9,7 +9,6 @@
   <br>
   <h2> The following occupations are available </h2>
   <table bgcolor = "#70E4EF" border = 4px>
-    <tr> <td> <b> Occupation </td> <td> Percentage </td> </b> <tr>
         {% for key in dict %}
           <tr> 
             <td>{{key}}</td>
