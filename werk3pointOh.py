@@ -15,7 +15,8 @@ dict = {}
 @app.route("/occupations")
 
 def helpMeFindAJob():
-    return render_template('jobs.html', job=occupations.giveMeAJob(occupations.giveMeADict()), dict=occupations.giveMeADict()))
+    return render_template('jobs.html', job=occupations.giveMeAJob(occupations.giveMeADict()),
+                           dict=occupations.giveMeADict())
 
 
 if __name__ == '__main__':
