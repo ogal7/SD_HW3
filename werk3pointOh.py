@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-import utils/occupations
+import utils
 
 app = Flask(__name__)
 
@@ -9,14 +9,12 @@ app = Flask(__name__)
 def hola():
     return "how do you solve a problem like Olivia?"
 
-job = ""
-dict = {}
 #occutable
 @app.route("/occupations")
 
 def helpMeFindAJob():
-    return render_template('jobs.html', job=occupations.giveMeAJob(occupations.giveMeADict()),
-                           dict=occupations.giveMeADict())
+    return render_template('jobs.html', job= utils/occupations.giveMeAJob(utils/occupations.giveMeADict()),
+                           dict = utils/occupations.giveMeADict())
 
 
 if __name__ == '__main__':
